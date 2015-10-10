@@ -1,5 +1,5 @@
 /*
- * endians.h - Definitions related to handling of byte ordering. 
+ * endians.h - Definitions related to handling of byte ordering.
  *             Originated from the Linux-NTFS project.
  *
  * Copyright (c) 2000-2005 Anton Altaparmakov
@@ -51,6 +51,8 @@
 #ifdef HAVE_SYS_PARAM_H
 #include <sys/param.h>
 #endif
+
+#define __BYTE_ORDER BYTE_ORDER
 
 #ifndef __BYTE_ORDER
 #	if defined(_BYTE_ORDER)
