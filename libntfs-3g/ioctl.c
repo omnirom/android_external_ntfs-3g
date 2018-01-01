@@ -65,6 +65,7 @@
 #ifdef HAVE_LINUX_FS_H
 #include <linux/fs.h>
 #endif
+#include <sys/sysmacros.h>
 
 #include "compat.h"
 #include "debug.h"
