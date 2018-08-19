@@ -1,7 +1,7 @@
 LOCAL_PATH := $(call my-dir)
 
 common_c_includes := $(LOCAL_PATH)/../fuse/include $(LOCAL_PATH)/include/ntfs-3g
-common_cflags := -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64  -DHAVE_CONFIG_H -DFUSE_USE_VERSION=26
+common_cflags := -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64  -DHAVE_CONFIG_H -DFUSE_USE_VERSION=26 -Wno-error
 
 # libntfs-3g
 libntfs_src_files :=libntfs-3g/acls.c libntfs-3g/attrib.c libntfs-3g/attrlist.c \
